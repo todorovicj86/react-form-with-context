@@ -5,8 +5,10 @@ import React, { Component } from 'react'
 import NavbarHooks from './NavbarHooks'
 import FormHooks from './FormHooks'
 import PageHooks from './PageHooks'
-import { ThemeProvider } from './contexts/ThemeContext'
-import { LanguageProvider } from './contexts/LanguageContext'
+// import { ThemeProvider } from './contexts/ThemeContext'
+// import { LanguageProvider } from './contexts/LanguageContext'
+import { LanguageProvider } from './contexts/LanguageContextHooks'
+import { ThemeProvider } from './contexts/ThemeContextHooks'
 import './App.css';
 
 class App extends Component {

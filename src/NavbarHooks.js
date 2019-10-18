@@ -8,8 +8,8 @@ import InputBase from '@material-ui/core/InputBase';
 import SearchIcon from '@material-ui/icons/Search';
 import Switch from '@material-ui/core/Switch'
 import styles from './styles/NavbarStyles'
-import { ThemeContext } from './contexts/ThemeContext'
-import { LanguageContext } from './contexts/LanguageContext'
+import { ThemeContext } from './contexts/ThemeContextHooks'
+import { LanguageContext } from './contexts/LanguageContextHooks'
 
 
 const content = {

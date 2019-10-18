@@ -13,7 +13,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import Select from "@material-ui/core/Select";
 import withStyles from "@material-ui/core/styles/withStyles";
 import styles from './styles/FormStyles'
-import { LanguageContext } from './contexts/LanguageContext'
+import { LanguageContext } from './contexts/LanguageContextHooks'
 
 
 const phrases = {

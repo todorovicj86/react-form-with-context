@@ -1,21 +1,19 @@
-import React, { Component } from 'react'
-import {ThemeContext} from './contexts/ThemeContext'
+import React, { useContext } from 'react'
+import {ThemeContext} from './contexts/ThemeContextHooks'
 
- class Page extends Component {
-    static contextType = ThemeContext;
+function PageHooks(props){
 
-    render() {
-        const { isDarkMode } = this.context
-        const styles ={
-            backgroundColor: isDarkMode ? "black" : "white",
-            height: "100vh",
-            width: "100vw"
-        }
-        return (
-            <div style={styles}>
-                {this.props.children}
-            </div>
-        )
+    const { isDarkMode } = useContext(ThemeContext)
+    const styles ={
+        backgroundColor: isDarkMode ? "black" : "white",
+        height: "100vh",
+        width: "100vw"
     }
+    return (
+        <div style={styles}>
+            {props.children}
+        </div>
+    )
 }
-export default Page;
+
+export default PageHooks;
