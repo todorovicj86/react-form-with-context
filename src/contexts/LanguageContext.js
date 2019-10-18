@@ -26,6 +26,7 @@ class LanguageProvider extends Component {
     }
 }
 
+// we do not need this part when using Hooks
 const withLanguageContext = Component => props => (
     <LanguageContext.Consumer>
         {value => <Component languageContext = {value} {...props} />}
